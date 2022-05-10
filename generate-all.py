@@ -20,6 +20,10 @@ cpf.fontname = f"{name}-{weight}"
 cpf.fullname = f"{name} {weight}"
 
 cpf.save(f"{name}-{weight}.sfd")
+cpf.close()
+
+cpf = ff.open(f"{name}-{weight}.sfd")
+cpf.generate(f"{name}-{weight}.ttf")
 
 
 # Regular (from Thin)
@@ -36,6 +40,10 @@ cpf.fontname = f"{name}-{weight}"
 cpf.fullname = f"{name} {weight}"
 
 cpf.save(f"{name}-{weight}.sfd")
+cpf.close()
+
+cpf = ff.open(f"{name}-{weight}.sfd")
+cpf.generate(f"{name}-{weight}.ttf")
 
 
 # Bold (from Regular)
@@ -56,3 +64,7 @@ cpf.fontname = f"{name}-{weight}"
 cpf.fullname = f"{name} {weight}"
 
 cpf.save(f"{name}-{weight}.sfd")
+cpf.close()
+
+cpf = ff.open(f"{name}-{weight}.sfd")
+cpf.generate(f"{name}-{weight}.ttf")
